@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
+    >
+    <title>My Year Goals</title>
+</head>
+
+<body>
+    <header>
+        <i class=""></i>
+        <h1>My <span class="year">2024</span> Goals</h1>
+        <div class="progress-bar">
+            <span class="progress" data-prog="0%"></span>
+        </div>
+    </header>
+
+    <div class="add-cont">
+        <input onkeyup="addBtnAppear()" type="text" class="add-input" placeholder="">
+        <button onclick="createTaske()" class="add-btn">Add</button>
+    </div>
+
+    <table class="incomplete">
+        <thead>
+            <tr>
+                <td>
+                    <i class="fa-sharp fa-regular fa-check done-condition"></i>
+                    <h2>To-Do</h2>
+                    <span><span class="inc-tasks-num"></span> Tasks</span>
+                </td>
+    
+                <td>
+                    Done
+                </td>
+                
+                <td>
+                    Delete
+                </td>
+            </tr>
+        </thead>
+        
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <table class="complete">
+        <thead>
+            <tr>
+                <td>
+                    <i class="fa-sharp fa-regular fa-check done-condition"></i>
+                    <h2>Completed</h2>
+                    <span><span class="c-tasks-num"></span> Tasks</span>
+                </td>
+    
+                <td>
+                    
+                </td>
+                
+                <td>
+                    Delete
+                </td>
+            </tr>
+        </thead>
+            
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
